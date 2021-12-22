@@ -25,13 +25,31 @@ export default function Dictionary() {
     setKeyword(event.target.value);
   }
 
-  return (
-    <div className="Dictionary">
-      <form onSubmit={search}>
-        <input type="search" autoFocus={true} onChange={handleKeywordChange} />
-      </form>
+  if (result) {
+    return (
+      <div className="Dictionary">
+        <form onSubmit={search}>
+          <input
+            type="search"
+            autoFocus={true}
+            onChange={handleKeywordChange}
+          />
+        </form>
 
-      <Results results={Results} />
-    </div>
-  );
+        <Results results={result} />
+      </div>
+    );
+  } else {
+    return (
+      <div className="Dictionary">
+        <form onSubmit={search}>
+          <input
+            type="search"
+            autoFocus={true}
+            onChange={handleKeywordChange}
+          />
+        </form>
+      </div>
+    );
+  }
 }
