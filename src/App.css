@@ -2,6 +2,7 @@
   padding: 60px 0 100px;
   max-width: 960px;
   margin: 0 auto;
+  background: rgb(161, 159, 159);
 }
 
 .App-logo {
@@ -20,9 +21,14 @@
 }
 
 a {
-  color: #9670f4;
+  color: #a08fce;
 }
 
 body {
-  background: #f9f8fe;
+  background: repeating-radial-gradient(#e66465, #9198e5 10%);
+  padding: 20px;
+}
+
+container {
+  padding: 20px;
 }
