@@ -14,7 +14,22 @@ export default function App() {
         </main>
         <footer className="App-footer">
           {" "}
-          <small>Coded by Alicia Vuong</small>{" "}
+          <small>Coded by Alicia Vuong</small> and open sourced on{" "}
+          <a
+            href="https://github.com/aleebo/dictionary101"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+          and hosted on{" "}
+          <a
+            href="https://jolly-johnson-c446a0.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Netlify
+          </a>
         </footer>
       </div>
     </div>
